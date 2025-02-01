@@ -1148,9 +1148,9 @@ void WIN_RaiseWindow(SDL_VideoDevice *_this, SDL_Window *window)
     bool bForce = SDL_GetHintBoolean(SDL_HINT_FORCE_RAISEWINDOW, false);
     bool bActivate = SDL_GetHintBoolean(SDL_HINT_WINDOW_ACTIVATE_WHEN_RAISED, true);
 
-    HWND hCurWnd = NULL;
-    DWORD dwMyID = 0u;
-    DWORD dwCurID = 0u;
+    //HWND hCurWnd = NULL;
+    //DWORD dwMyID = 0u;
+    //DWORD dwCurID = 0u;
 
     SDL_WindowData *data = window->internal;
     HWND hwnd = data->hwnd;
