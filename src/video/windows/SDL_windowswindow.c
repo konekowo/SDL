@@ -1156,8 +1156,8 @@ void WIN_RaiseWindow(SDL_VideoDevice *_this, SDL_Window *window)
     HWND hwnd = data->hwnd;
     if (bForce) {
         hCurWnd = GetForegroundWindow();
-        dwMyID = GetCurrentThreadId();
-        dwCurID = GetWindowThreadProcessId(hCurWnd, NULL);
+        //dwMyID = GetCurrentThreadId();
+        //dwCurID = GetWindowThreadProcessId(hCurWnd, NULL);
         ShowWindow(hwnd, SW_RESTORE);
         //AttachThreadInput(dwCurID, dwMyID, TRUE);
         SetWindowPos(hwnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
