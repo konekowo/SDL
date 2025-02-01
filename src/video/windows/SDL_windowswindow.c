@@ -1155,7 +1155,7 @@ void WIN_RaiseWindow(SDL_VideoDevice *_this, SDL_Window *window)
     SDL_WindowData *data = window->internal;
     HWND hwnd = data->hwnd;
     if (bForce) {
-        hCurWnd = GetForegroundWindow();
+        //hCurWnd = GetForegroundWindow();
         //dwMyID = GetCurrentThreadId();
         //dwCurID = GetWindowThreadProcessId(hCurWnd, NULL);
         ShowWindow(hwnd, SW_RESTORE);
